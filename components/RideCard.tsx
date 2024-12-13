@@ -45,7 +45,7 @@ const RideCard = ({ ride }: { ride: Ride }) => {
 
           <View className="flex flex-row items-center w-full justify-between mb-5">
             <Text className="text-md font-JakartaMedium text-gray-500">
-              Driver
+              Helper
             </Text>
             <Text className="text-md font-JakartaBold">
               {ride.driver.first_name} {ride.driver.last_name}
@@ -54,14 +54,14 @@ const RideCard = ({ ride }: { ride: Ride }) => {
 
           <View className="flex flex-row items-center w-full justify-between mb-5">
             <Text className="text-md font-JakartaMedium text-gray-500">
-              Car Seats
+              Skill set
             </Text>
             <Text className="text-md font-JakartaBold">
               {ride.driver.car_seats}
             </Text>
           </View>
 
-          <View className="flex flex-row items-center w-full justify-between">
+          {/* <View className="flex flex-row items-center w-full justify-between">
             <Text className="text-md font-JakartaMedium text-gray-500">
               Payment Status
             </Text>
@@ -70,7 +70,7 @@ const RideCard = ({ ride }: { ride: Ride }) => {
             >
               {ride.payment_status}
             </Text>
-          </View>
+          </View> */}
         </View>
       </View>
     </View>

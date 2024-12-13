@@ -94,7 +94,7 @@ const Home = () => {
                   alt="No recent rides found"
                   resizeMode="contain"
                 />
-                <Text className="text-sm">No recent rides found</Text>
+                <Text className="text-sm">No recent helps found</Text>
               </>
             ) : (
               <ActivityIndicator size="small" color="#000" />
@@ -131,7 +131,7 @@ const Home = () => {
             </>
 
             <Text className="text-xl font-JakartaBold mt-5 mb-3">
-              Recent Rides
+              Recent Helps
             </Text>
           </>
         }

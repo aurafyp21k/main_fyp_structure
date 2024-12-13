@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "uber",
-    "slug": "uber",
+    "name": "Madadgar",
+    "slug": "Madadgar",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/madoo3.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#2F80ED"
+      "image": "./assets/images/madoo3.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#5CB8FF"
     },
     "ios": {
       "supportsTablet": true
@@ -30,9 +30,11 @@
       [
         "expo-router",
         {
-          "origin": "https://uber.dev/"
+          "origin": "https://uber.com/"
         }
-      ]
+      ],
+      "expo-font",
+      "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true
