@@ -7,6 +7,9 @@ import InputField from "@/components/InputField";
 const Profile = () => {
   const { user } = useUser();
 
+  // Debugging: Log the user object to see what data is being returned
+  console.log("User data:", user);
+
   return (
     <SafeAreaView className="flex-1">
       <ScrollView
@@ -32,7 +35,7 @@ const Profile = () => {
               placeholder={user?.firstName || "Not Found"}
               containerStyle="w-full"
               inputStyle="p-3.5"
-              editable={false}
+              editable={true}
             />
 
             <InputField
@@ -51,6 +54,7 @@ const Profile = () => {
               containerStyle="w-full"
               inputStyle="p-3.5"
               editable={false}
+              
             />
 
             <InputField
@@ -58,7 +62,7 @@ const Profile = () => {
               placeholder={user?.primaryPhoneNumber?.phoneNumber || "Not Found"}
               containerStyle="w-full"
               inputStyle="p-3.5"
-              editable={true}
+              editable={false}
             />
           </View>
         </View>

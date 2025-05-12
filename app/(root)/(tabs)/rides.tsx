@@ -15,7 +15,7 @@ const Rides = () => {
     loading,
     error,
   } = useFetch<Ride[]>(`/(api)/ride/${user?.id}`);
-
+ console.log(recentRides);
   return (
     <SafeAreaView className="flex-1 bg-white">
       <FlatList
